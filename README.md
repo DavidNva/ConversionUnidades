@@ -1,6 +1,6 @@
 # ConversionUnidades
 Aplicacion de escritorio para convertir unidades de distintas magnitudes
-Converss 
+Conversiones
 Masa  
 Longitud
 Divisa
