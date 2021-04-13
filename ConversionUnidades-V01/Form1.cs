@@ -42,6 +42,15 @@ namespace ConversionUnidades_V01
             cmbFinalLongitud.Items.Add("Centimetros");//1
             cmbFinalLongitud.Items.Add("Metros");//2
             cmbFinalLongitud.Items.Add("Kilometros");//3
+
+            //ConversionTemperatura   
+            cmbInicioTemp.Items.Add("Celsius");//0
+            cmbInicioTemp.Items.Add("Fahrenheit");//1
+            cmbInicioTemp.Items.Add("Kelvin");//2
+
+            cmbFinalTemp.Items.Add("Celsius");//0
+            cmbFinalTemp.Items.Add("Fahrenheit");//1
+            cmbFinalTemp.Items.Add("Kelvin");//2
         }
         ConversionModeda moneda = new ConversionModeda();
         private void btnConvertirMoneda_Click(object sender, EventArgs e)
@@ -383,6 +392,95 @@ namespace ConversionUnidades_V01
         }
 
         private void btnSalirLongitud_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseas Salir de la Appliacion", "Confirme Salida", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        //------------------------------------------------------------------------------------------------------------
+        ConversionTemperatura temperatura = new ConversionTemperatura();
+        private void btnConvertirTemp_Click(object sender, EventArgs e)
+        {
+            //Validacion de campos vacios
+            if (cmbInicioTemp.Items == null || cmbFinalTemp.Items == null || txtValorInicioTemp.Text == "")
+            {
+                errorIndice.SetError(cmbInicioTemp, "Debes seleccionar un valor a convertir");
+                errorIndice.SetError(cmbFinalTemp, "Debes selecionar una conversion");
+                errorIndice.SetError(txtValorInicioTemp, "Debes ingresar un valor");
+            }
+            else
+            {//Si los campos esta llenos, continua con los metodos a a realizar de acuerdo al item seleccionado
+
+                double valorMoneda;
+                if (!double.TryParse(txtValorInicioTemp.Text, out valorMoneda))
+                {
+                    errorIndice.SetError(txtValorInicioTemp, "Debes ingresar un numero");
+                    return;
+                }
+                else
+                {
+                    if (cmbInicioTemp.SelectedIndex.Equals(0) == true && cmbFinalTemp.SelectedIndex.Equals(1) == true)
+                    {
+                        txtResultadoTemp.Text = temperatura.CalculaCelsiusAFahre(Convert.ToDouble(txtValorInicioTemp.Text)).ToString() + "º F ";
+                    }
+                    if (cmbInicioTemp.SelectedIndex.Equals(1) == true && cmbFinalTemp.SelectedIndex.Equals(0) == true)
+                    {
+                        txtResultadoTemp.Text = temperatura.CalculaFahrenheitACelsius(Convert.ToDouble(txtValorInicioTemp.Text)).ToString() + "º C ";
+                    }
+
+
+                }
+                //Ingreso de misma conversion
+                if (cmbInicioTemp.SelectedItem == cmbFinalTemp.SelectedItem)
+                {
+                    if (cmbInicioTemp.SelectedItem != null || cmbFinalTemp.SelectedItem != null)
+                    {
+                        txtResultadoTemp.Text = txtValorInicioTemp.Text + "º " + cmbFinalTemp.SelectedItem;
+                    }
+                    else
+                    {
+                        errorIndice.SetError(cmbInicioTemp, "Debes seleccionar un valor a convertir");
+                        cmbInicioMoneda.Focus();
+                        errorIndice.SetError(cmbFinalTemp, "Debes selecionar una conversion");
+                        //errorIndice.SetError(txtValorInicioMoneda, "Debes selecionar una conversion de arriba");
+                    }
+                }
+                else
+                {
+                    btnLimpiarTemp.Visible = false;
+                    lblResultadoTemp.Visible = false;
+                    txtResultadoTemp.Visible = false;
+                }
+            }
+            //Si no, si no estan vacios
+            //Se quitan los errores si se cumple que:
+            if (cmbInicioTemp.Text != "") { errorIndice.SetError(cmbInicioTemp, null); }
+            if (cmbFinalTemp.Text != "") { errorIndice.SetError(cmbFinalTemp, null); }
+            if (txtValorInicioTemp.Text != "") { errorIndice.SetError(txtValorInicioTemp, null); }
+            //Si se cumplen las condiciones entonces ya se muestra el resultado y el boton limpiar
+            if (txtValorInicioTemp.Text != "" && cmbInicioTemp.SelectedItem != null && cmbFinalTemp.SelectedItem != null)
+            {
+                btnLimpiarTemp.Visible = true;
+                lblResultadoTemp.Visible = true;
+                txtResultadoTemp.Visible = true;
+            }
+
+        }
+
+        private void btnLimpiarTemp_Click(object sender, EventArgs e)
+        {
+            cmbInicioTemp.Text = null;
+            cmbFinalTemp.Text = null;
+            txtValorInicioTemp.Clear();
+            txtResultadoTemp.Clear();
+            lblResultadoTemp.Visible = false;
+            txtResultadoTemp.Visible = false;
+            btnLimpiarTemp.Visible = false;
+        }
+
+        private void btnSalirTemp_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Deseas Salir de la Appliacion", "Confirme Salida", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {

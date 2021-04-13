@@ -71,6 +71,18 @@
             this.cmbFinalLongitud = new System.Windows.Forms.ComboBox();
             this.lblResultadoLongitud = new System.Windows.Forms.Label();
             this.errorIndice = new System.Windows.Forms.ErrorProvider(this.components);
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.btnSalirTemp = new System.Windows.Forms.Button();
+            this.txtResultadoTemp = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.btnLimpiarTemp = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.btnConvertirTemp = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.cmbInicioTemp = new System.Windows.Forms.ComboBox();
+            this.txtValorInicioTemp = new System.Windows.Forms.TextBox();
+            this.cmbFinalTemp = new System.Windows.Forms.ComboBox();
+            this.lblResultadoTemp = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -78,6 +90,7 @@
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorIndice)).BeginInit();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -115,6 +128,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
@@ -597,6 +611,164 @@
             // 
             this.errorIndice.ContainerControl = this;
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.btnSalirTemp);
+            this.tabPage4.Controls.Add(this.txtResultadoTemp);
+            this.tabPage4.Controls.Add(this.label11);
+            this.tabPage4.Controls.Add(this.btnLimpiarTemp);
+            this.tabPage4.Controls.Add(this.label12);
+            this.tabPage4.Controls.Add(this.btnConvertirTemp);
+            this.tabPage4.Controls.Add(this.label13);
+            this.tabPage4.Controls.Add(this.cmbInicioTemp);
+            this.tabPage4.Controls.Add(this.txtValorInicioTemp);
+            this.tabPage4.Controls.Add(this.cmbFinalTemp);
+            this.tabPage4.Controls.Add(this.lblResultadoTemp);
+            this.tabPage4.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.tabPage4.Location = new System.Drawing.Point(4, 29);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(829, 382);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Conversion Temperatura";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // btnSalirTemp
+            // 
+            this.btnSalirTemp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSalirTemp.FlatAppearance.BorderSize = 0;
+            this.btnSalirTemp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnSalirTemp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Khaki;
+            this.btnSalirTemp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalirTemp.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalirTemp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSalirTemp.Location = new System.Drawing.Point(746, 347);
+            this.btnSalirTemp.Name = "btnSalirTemp";
+            this.btnSalirTemp.Size = new System.Drawing.Size(75, 27);
+            this.btnSalirTemp.TabIndex = 8;
+            this.btnSalirTemp.Text = "Salir";
+            this.btnSalirTemp.UseVisualStyleBackColor = true;
+            this.btnSalirTemp.Click += new System.EventHandler(this.btnSalirTemp_Click);
+            // 
+            // txtResultadoTemp
+            // 
+            this.txtResultadoTemp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtResultadoTemp.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtResultadoTemp.Location = new System.Drawing.Point(527, 77);
+            this.txtResultadoTemp.Name = "txtResultadoTemp";
+            this.txtResultadoTemp.Size = new System.Drawing.Size(131, 23);
+            this.txtResultadoTemp.TabIndex = 10;
+            this.txtResultadoTemp.Visible = false;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(111, 40);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(93, 17);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Convertir de:";
+            // 
+            // btnLimpiarTemp
+            // 
+            this.btnLimpiarTemp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnLimpiarTemp.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnLimpiarTemp.FlatAppearance.BorderSize = 0;
+            this.btnLimpiarTemp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnLimpiarTemp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleTurquoise;
+            this.btnLimpiarTemp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiarTemp.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiarTemp.Location = new System.Drawing.Point(558, 119);
+            this.btnLimpiarTemp.Name = "btnLimpiarTemp";
+            this.btnLimpiarTemp.Size = new System.Drawing.Size(75, 31);
+            this.btnLimpiarTemp.TabIndex = 7;
+            this.btnLimpiarTemp.Text = "Limpiar";
+            this.btnLimpiarTemp.UseVisualStyleBackColor = true;
+            this.btnLimpiarTemp.Visible = false;
+            this.btnLimpiarTemp.Click += new System.EventHandler(this.btnLimpiarTemp_Click);
+            // 
+            // label12
+            // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(111, 80);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(46, 17);
+            this.label12.TabIndex = 11;
+            this.label12.Text = "Valor:";
+            // 
+            // btnConvertirTemp
+            // 
+            this.btnConvertirTemp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnConvertirTemp.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnConvertirTemp.FlatAppearance.BorderSize = 0;
+            this.btnConvertirTemp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnConvertirTemp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleTurquoise;
+            this.btnConvertirTemp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConvertirTemp.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConvertirTemp.Location = new System.Drawing.Point(228, 119);
+            this.btnConvertirTemp.Name = "btnConvertirTemp";
+            this.btnConvertirTemp.Size = new System.Drawing.Size(88, 31);
+            this.btnConvertirTemp.TabIndex = 6;
+            this.btnConvertirTemp.Text = "Convertir";
+            this.btnConvertirTemp.UseVisualStyleBackColor = true;
+            this.btnConvertirTemp.Click += new System.EventHandler(this.btnConvertirTemp_Click);
+            // 
+            // label13
+            // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(427, 40);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(85, 17);
+            this.label13.TabIndex = 1;
+            this.label13.Text = "Convertir a:";
+            // 
+            // cmbInicioTemp
+            // 
+            this.cmbInicioTemp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.cmbInicioTemp.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbInicioTemp.FormattingEnabled = true;
+            this.cmbInicioTemp.Location = new System.Drawing.Point(210, 36);
+            this.cmbInicioTemp.Name = "cmbInicioTemp";
+            this.cmbInicioTemp.Size = new System.Drawing.Size(131, 25);
+            this.cmbInicioTemp.TabIndex = 2;
+            // 
+            // txtValorInicioTemp
+            // 
+            this.txtValorInicioTemp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtValorInicioTemp.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValorInicioTemp.Location = new System.Drawing.Point(210, 77);
+            this.txtValorInicioTemp.Name = "txtValorInicioTemp";
+            this.txtValorInicioTemp.Size = new System.Drawing.Size(131, 23);
+            this.txtValorInicioTemp.TabIndex = 9;
+            // 
+            // cmbFinalTemp
+            // 
+            this.cmbFinalTemp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.cmbFinalTemp.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbFinalTemp.FormattingEnabled = true;
+            this.cmbFinalTemp.Location = new System.Drawing.Point(527, 36);
+            this.cmbFinalTemp.Name = "cmbFinalTemp";
+            this.cmbFinalTemp.Size = new System.Drawing.Size(131, 25);
+            this.cmbFinalTemp.TabIndex = 3;
+            // 
+            // lblResultadoTemp
+            // 
+            this.lblResultadoTemp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lblResultadoTemp.AutoSize = true;
+            this.lblResultadoTemp.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultadoTemp.Location = new System.Drawing.Point(427, 83);
+            this.lblResultadoTemp.Name = "lblResultadoTemp";
+            this.lblResultadoTemp.Size = new System.Drawing.Size(76, 17);
+            this.lblResultadoTemp.TabIndex = 4;
+            this.lblResultadoTemp.Text = "Resultado:";
+            this.lblResultadoTemp.Visible = false;
+            // 
             // FormConversionUnidades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -621,6 +793,8 @@
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorIndice)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -668,6 +842,18 @@
         private System.Windows.Forms.ComboBox cmbFinalLongitud;
         private System.Windows.Forms.Label lblResultadoLongitud;
         private System.Windows.Forms.Button btnSalirLongitud;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Button btnSalirTemp;
+        private System.Windows.Forms.TextBox txtResultadoTemp;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button btnLimpiarTemp;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button btnConvertirTemp;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox cmbInicioTemp;
+        private System.Windows.Forms.TextBox txtValorInicioTemp;
+        private System.Windows.Forms.ComboBox cmbFinalTemp;
+        private System.Windows.Forms.Label lblResultadoTemp;
     }
 }
 

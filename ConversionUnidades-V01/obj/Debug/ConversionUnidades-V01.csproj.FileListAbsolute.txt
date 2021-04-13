@@ -18,3 +18,13 @@ C:\Users\Coppel\OneDrive\Documents\David Nava-Proyectos de programacion\Otros pr
 C:\Users\Coppel\OneDrive\Documents\David Nava-Proyectos de programacion\Otros proyectos\Proyectos Nuevos\ConversionUnidades-V1.1\ConversionUnidades-V01\obj\Debug\ConversionUnidades-V01.csproj.CoreCompileInputs.cache
 C:\Users\Coppel\OneDrive\Documents\David Nava-Proyectos de programacion\Otros proyectos\Proyectos Nuevos\ConversionUnidades-V1.1\ConversionUnidades-V01\obj\Debug\ConversionUnidades-V01.exe
 C:\Users\Coppel\OneDrive\Documents\David Nava-Proyectos de programacion\Otros proyectos\Proyectos Nuevos\ConversionUnidades-V1.1\ConversionUnidades-V01\obj\Debug\ConversionUnidades-V01.pdb
+D:\Documentos\David Nava-Proyectos de programacion\Otros proyectos\Proyectos Nuevos\ConversionUnidades-V1.1\ConversionUnidades-V01\bin\Debug\ConversionUnidades-V01.exe.config
+D:\Documentos\David Nava-Proyectos de programacion\Otros proyectos\Proyectos Nuevos\ConversionUnidades-V1.1\ConversionUnidades-V01\bin\Debug\ConversionUnidades-V01.exe
+D:\Documentos\David Nava-Proyectos de programacion\Otros proyectos\Proyectos Nuevos\ConversionUnidades-V1.1\ConversionUnidades-V01\bin\Debug\ConversionUnidades-V01.pdb
+D:\Documentos\David Nava-Proyectos de programacion\Otros proyectos\Proyectos Nuevos\ConversionUnidades-V1.1\ConversionUnidades-V01\obj\Debug\ConversionUnidades-V01.csprojAssemblyReference.cache
+D:\Documentos\David Nava-Proyectos de programacion\Otros proyectos\Proyectos Nuevos\ConversionUnidades-V1.1\ConversionUnidades-V01\obj\Debug\ConversionUnidades_V01.FormConversionUnidades.resources
+D:\Documentos\David Nava-Proyectos de programacion\Otros proyectos\Proyectos Nuevos\ConversionUnidades-V1.1\ConversionUnidades-V01\obj\Debug\ConversionUnidades_V01.Properties.Resources.resources
+D:\Documentos\David Nava-Proyectos de programacion\Otros proyectos\Proyectos Nuevos\ConversionUnidades-V1.1\ConversionUnidades-V01\obj\Debug\ConversionUnidades-V01.csproj.GenerateResource.cache
+D:\Documentos\David Nava-Proyectos de programacion\Otros proyectos\Proyectos Nuevos\ConversionUnidades-V1.1\ConversionUnidades-V01\obj\Debug\ConversionUnidades-V01.csproj.CoreCompileInputs.cache
+D:\Documentos\David Nava-Proyectos de programacion\Otros proyectos\Proyectos Nuevos\ConversionUnidades-V1.1\ConversionUnidades-V01\obj\Debug\ConversionUnidades-V01.exe
+D:\Documentos\David Nava-Proyectos de programacion\Otros proyectos\Proyectos Nuevos\ConversionUnidades-V1.1\ConversionUnidades-V01\obj\Debug\ConversionUnidades-V01.pdb
